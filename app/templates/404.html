@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+
+{% endblock%}
+
+{% block content %}
+<div class="error">
+    <img src="../static/images/BeFunky-photo.jpg" height="1000" width="1351" style="background-repeat: no-repeat; background-size: cover;">
+    <p>404 error</p>
+</div>
+{% endblock %}
