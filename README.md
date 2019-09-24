@@ -35,6 +35,8 @@ blogchain is an application that allows the writer to post their blogs and users
   It does not display blogs at first
 
 ## Licence
- This project is under the MIT Licence
-[![License]](http://opensource.org/licenses/MIT)
+ 
+ [![License](https://img.shields.io/packagist/l/loopline-systems/closeio-api-wrapper.svg)](http://opensource.org/licenses/MIT)
+ 
+ 
  Copyright (c) 2019 Moharick
