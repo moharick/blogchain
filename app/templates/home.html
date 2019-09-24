@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock%}
+{% block content %}
+<!-- <div class="col-md-6">
+    <h2 class="text-center"><u><strong><i>Categories</i></strong></u></h2>
+    <br>
+
+    <div class="center">
+      <div class="row categories">
+        <a href="{{url_for('main.pitches_category',category='Movie Blog')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>Fashion</span>
+          </div>
+        </a>
+        <a href="{{url_for('main.pitches_category',category='Health Blog')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>Food</span>
+          </div>
+        </a>
+
+
+        <a href="{{url_for('main.pitches_category',category='Sports Blog')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>Travel</span>
+          </div>
+        </a>
+
+
+        <a href="{{url_for('main.pitches_category',category='Car Blog')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>Music</span>
+          </div>
+        </a>
+
+
+        <a href="{{url_for('main.pitches_category',category='Music Blog')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>Sports</span>
+          </div>
+        </a>
+        <a href="{{url_for('main.pitches_category',category='All Blogs')}}">
+          <div class="category col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <span>All Blogs</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div> -->
+<!-- Card deck -->
+<div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://thetvtraveler.com/wp-content/uploads/2019/03/endgame.jpg" height="300px" alt="Card image cap">
+        <a href="{{url_for('main.pitches_category',category='Movie Blog')}}">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Movie blog</h4>
+        <!--Text-->
+        <p class="card-text">Talks about the popular movies</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='Movie Blog')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHm5wDUfxc2iG-AxVAkiPqXFgoOQx0B3PJbf-NZgUSMXHGQlH9Eg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Health Blog</h4>
+        <!--Text-->
+        <p class="card-text">Talks on health matters</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='Health Blog')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDZCnkec_dZr1jl8xfigD7YHtC01sZ4ttBlARmRTg7Jm1yPQx" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Sports Blog</h4>
+        <!--Text-->
+        <p class="card-text">Talks on all kinds of sports</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='Sports Blog')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!-- Card deck -->
+<!-- Card deck -->
+<div class="card-deck">
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://i.ytimg.com/vi/Vhq-OykV6nQ/maxresdefault.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Car Blog</h4>
+        <!--Text-->
+        <p class="card-text">Car talk and more car talk</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='Car Blog')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://rachelcorbett.com.au/wp-content/uploads/2017/08/Drawing-of-man-playing-music-on-a-guitar.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Music Blog</h4>
+        <!--Text-->
+        <p class="card-text">Music matters</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='Music Blog')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+    <!-- Card -->
+    <div class="card mb-4">
+
+      <!--Card image-->
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <!--Card content-->
+      <div class="card-body">
+
+        <!--Title-->
+        <h4 class="card-title">Random Blogs</h4>
+        <!--Text-->
+        <p class="card-text">Any other talk</p>
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <a href="{{url_for('main.pitches_category',category='All Blogs')}}" class="btn btn-primary" role="button">Read more</a>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+  </div>
+  <!-- Card deck -->
+
+{% endblock content %}
